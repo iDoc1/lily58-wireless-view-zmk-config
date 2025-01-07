@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -45,7 +46,7 @@
 &trans  &trans  &trans          &kp UP_ARROW    &trans           &kp TILDE                        &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PIPE                         &trans  &trans  &trans  &trans   &trans   &kp GRAVE
 &trans  &trans  &trans          &trans          &trans           &kp BACKSLASH  &trans    &trans  &trans  &trans  &trans  &trans   &trans   &trans
-                                &trans          &trans           &trans         &trans    &trans  &trans  &trans  &trans
+                                &bt BT_PRV      &bt BT_NXT       &trans         &trans    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
